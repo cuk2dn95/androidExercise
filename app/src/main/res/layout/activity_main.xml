@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".MainActivity" >
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/icon_facebook"
+      android:layout_marginTop="60dp"
+      android:layout_marginLeft="@dimen/edt_margin_left"
+      android:layout_marginRight="@dimen/edt_margin_right"
+      android:layout_marginBottom="@dimen/edt_margin_bottom"
+      android:id="@+id/banner"
+
+
+      />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:padding="@dimen/text_padding"
+        android:hint="@string/hint_email_phone"
+        android:textColor="@color/black"
+        android:id="@+id/email"
+        android:background="@drawable/roundborder_textfield"
+
+
+
+        />
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="@dimen/text_padding"
+         android:background="@drawable/roundborder_textfield"
+         android:layout_below="@id/email"
+         android:layout_marginLeft="@dimen/edt_margin_left"
+         android:layout_marginRight="@dimen/edt_margin_right"
+         android:layout_marginTop="@dimen/edt_margin_top"
+         android:layout_marginBottom="@dimen/edt_margin_bottom"
+         android:hint="@string/hint_pass"
+         android:textColor="@color/black"
+         android:id="@+id/pass"
+
+         />
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/text_login"
+      android:textColor="@color/white"
+      android:layout_marginLeft="@dimen/edt_margin_left"
+      android:layout_marginRight="@dimen/edt_margin_right"
+      android:layout_marginTop="@dimen/edt_margin_top"
+      android:layout_below="@id/pass"
+      android:textSize="@dimen/text_size_large"
+      android:id="@+id/button"
+      android:background="@drawable/roundborder_button"
+      android:textStyle="normal|bold" />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/text_sign_up"
+       android:textColor="@color/white"
+       android:gravity="center"
+       android:textSize="@dimen/text_size_small"
+       android:padding="@dimen/text_padding"
+       android:layout_marginLeft="@dimen/edt_margin_left"
+       android:layout_marginRight="@dimen/edt_margin_right"
+       android:layout_alignParentBottom="true"
+       android:id="@+id/btn_sign_up"
+
+
+       />
+
+ <TextView
+
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+
+     android:layout_marginBottom="@dimen/edt_margin_bottom"
+     android:layout_alignParentBottom="true"
+
+     android:layout_marginRight="@dimen/edt_margin_right"
+     android:background="@drawable/icon_help"
+     tools:textColor="@color/white"
+    />
+
+
+</RelativeLayout>
